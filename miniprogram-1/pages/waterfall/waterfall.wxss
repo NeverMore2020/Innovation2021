@@ -1,0 +1,51 @@
+@import '/iconfont/iconfont.wxss';
+
+.waterfall{
+    display: flex;
+    width: 750rpx;
+}
+.items{
+    flex-direction: column;
+    flex:1;
+}
+.item{
+    border: 2px solid pink;
+    border-radius: 15rpx;
+    margin: 30rpx 15rpx;
+    box-shadow: #666 3px 3px 10px;
+}
+.item .img{
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.item .text{
+    border-bottom: 1px solid #666;
+    padding:0 10rpx 10rpx 10rpx
+}
+.item .text .title{
+    font-size: 34rpx;
+}
+.item .text .desc{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #a2a2a2;
+
+
+}
+.item .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10rpx 0;
+    color: #a2a2a2;
+}
+.item .info .avatar{
+    height: 50rpx;
+    display: block;
+}
+.item .info .userId{
+    margin-right: 120rpx;
+    font-size: 30rpx;
+}
+

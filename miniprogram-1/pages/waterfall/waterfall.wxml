@@ -1,0 +1,23 @@
+<view class="waterfall">
+    <view class="items items-left">
+        <template is="item" wx:for="{{list}}"></template>
+    </view>
+    <view class="items items-right">
+        <template is="item" wx:for="{{list}}"></template>
+    </view>
+</view>
+<template name="item">
+    <view class="item">
+            <image class="img" src="/imgs/一毛钱.png" mode="widthFix"></image>
+            <view class="text">
+                <view class="title">饺子真好吃</view>
+                <view class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere blanditiis voluptate laborum magnam amet velit temporibus delectus ipsam modi, exercitationem minus fugit vero deserunt officia magni asperiores ipsum quidem atque.</view>
+            </view>
+            <view class="info">
+                <image src="/imgs/面性男孩绿.png" mode="heightFix" class="avatar"></image>
+                <view class="userId">用户ID</view>
+                <view class="like"><i class="iconfont icon-zan"></i>15</view>
+            </view>
+            
+        </view>
+</template>
