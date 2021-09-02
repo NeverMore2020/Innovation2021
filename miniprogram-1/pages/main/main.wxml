@@ -1,0 +1,59 @@
+<!--pages/main.wxml-->
+<view class="main">
+  <view class="top">
+    <text class="title">薄荷营养师</text>
+    <input type="text" placeholder="请输入食物名称"></input>
+    <view class="foodOperation">
+      <view>食物对比</view>
+      <view>食物排行榜</view>
+      <view>配料表解读</view>
+    </view>
+  </view>
+  <view class="middle">
+    <text>单位：千卡</text>
+    <view class="incomeQuantity">
+      <view>
+        <view class="discription">推荐</view>
+        <view class="number">1800</view>
+      </view>
+      <view>
+        <view class="discription">剩余</view>
+        <view class="number">1800</view>
+      </view>
+      <view>
+        <view class="discription">摄入</view>
+        <view class="number">0</view>
+      </view>
+      <view class="circle"></view>
+    </view>
+    <view class="incomeType">
+      <view>
+        <view class="type">碳水化合物</view>
+        <view class="progress">------------</view>
+        <view class="number">0/248克</view>
+      </view>
+      <view>
+        <view class="type">蛋白质</view>
+        <view class="progress">------------</view>
+        <view class="number">0/90克</view>
+      </view>
+      <view>
+        <view class="type">脂肪</view>
+        <view class="progress">------------</view>
+        <view class="number">0/50克</view>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <text class="title">食物分类</text>
+    <view class="divide"></view>
+    <view class="types">
+      <view class="type" wx:for="{{types}}">
+        <view class="icon">
+          <image src="{{ item.icon }}"></image>
+        </view>
+        <text>{{ item.name }}</text>
+      </view>
+    </view>
+  </view>
+</view>

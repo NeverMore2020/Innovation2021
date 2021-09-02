@@ -1,0 +1,146 @@
+/* pages/main.wxss */
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #eeeeee;
+  padding-bottom: 200rpx;
+}
+.top{
+  text-align: center;
+  width: 750rpx;
+  height: 400rpx;
+  padding-top: 40rpx;
+  background-color: rgb(255, 140, 78);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.top .title{
+  font-weight: bold;
+  color: white;
+  font-size: large;
+  letter-spacing: 5rpx;
+}
+.top > input{
+  background-color: white;
+  width: 600rpx;
+  height: 90rpx;
+  border-radius: 15rpx;
+  text-align: start;
+  padding-left: 50rpx;
+}
+.foodOperation{
+  display: flex;
+  justify-content: center;
+}
+.foodOperation > view{
+  width: 210rpx;
+  margin: auto;
+  color: white;
+  border-right: 4rpx solid white;
+}
+.foodOperation > view:last-child{
+  border-right: none;
+}
+.middle{
+  width: 700rpx;
+  height: 420rpx;
+  border-radius: 20rpx;
+  background-color: white;
+  margin: 30rpx auto;
+  position: relative;
+}
+.middle > text {
+  position: absolute;
+  top: 20rpx;
+  right: 30rpx;
+  font-size: 20rpx;
+  color: #aaaaaa;
+}
+.middle .incomeQuantity{
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.middle .incomeQuantity .circle{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100%;
+  border: orange 4rpx solid;
+  position: absolute;
+  top: 50rpx;
+}
+.middle .incomeQuantity .discription{
+  color: #aaaaaa;
+  text-align: center;
+  font-size: 26rpx;
+  width: 200rpx;
+}
+.middle .incomeQuantity .number{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10rpx;
+}
+.middle .incomeType{
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 26rpx;
+  color: #aaaaaa;
+}
+.middle .incomeType > view{
+  width: 200rpx;
+}
+.bottom{
+  width: 700rpx;
+  /* height: 1000rpx; */
+  border-radius: 20rpx;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.bottom .title{
+  font-size: 30rpx;
+  margin-top: 40rpx;
+  font-size: 36rpx;
+}
+.bottom .divide{
+  width: 100%;
+  margin: 30rpx 0;
+  border-bottom: 2rpx #aaaaaa dashed;
+}
+.bottom .types{
+  width: 700rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.bottom .types .type{
+  width: 200rpx;
+  margin-bottom: 40rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 26rpx;
+}
+.bottom .types .type .icon{
+  width: 130rpx;
+  height: 130rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 2rpx solid #aaaaaa;
+  margin-bottom: 10rpx;
+}
+.bottom .types .type .icon image{
+  width: 80rpx;
+  height: 80rpx;
+}
